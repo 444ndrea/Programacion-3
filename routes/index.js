@@ -11,6 +11,7 @@ const database = require('../config/database');
 const request = require ('request');
 const nodemailer = require('nodemailer');
 
+
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
